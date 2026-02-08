@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  margin-top: 80px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.hidden { display: none; }
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 25px;
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#yesBtn { background: hotpink; color: white; }
+#unlockBtn { background: purple; color: white; }
+#noBtn { background: lightgray; }
+#errorMsg { color: red; font-size: 14px; }
+
+/* FLOATING HEARTS */
+.heart {
+  position: absolute;
+  animation: floatUp 4s linear forwards;
+  font-size: 24px;
+}
+
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0) rotate(0deg);}
+  100% { opacity: 0; transform: translateY(-300px) rotate(360deg);}
+}
+
+/* HANGING HEARTS / FLOWERS */
+.hanging {
+  position: absolute;
+  animation: swing 3s ease-in-out infinite alternate;
+  font-size: 24px;
+}
+
+@keyframes swing {
+  0% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}

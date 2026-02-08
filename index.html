@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Valentine 💘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔒 PASSWORD SCREEN -->
+<div id="lockScreen" class="card">
+  <h1>🔒 Enter Password</h1>
+  <p>Our special date 💗</p>
+  <input type="password" id="passwordInput" placeholder="MMDDYY 💭">
+  <br>
+  <button id="unlockBtn">Unlock 💘</button>
+  <p id="errorMsg"></p>
+</div>
+
+<!-- 💘 VALENTINE QUESTION SCREEN -->
+<div id="valentineScreen" class="card hidden">
+  <h1>Will you be my Valentine? 💖</h1>
+  <div class="buttons">
+    <button id="yesBtn">Yes 💘</button>
+    <button id="noBtn">No 😭</button>
+  </div>
+</div>
+
+<!-- 💌 LETTER SCREEN -->
+<div id="letterScreen" class="card hidden">
+  <h1 id="letterTitle">💌 A Special Letter For You 💌</h1>
+  <p id="letterText"></p>
+</div>
+
+<!-- 🎵 SONG SCREEN -->
+<div id="songScreen" class="card hidden">
+  <h1>🎶 My Song For You 🎶</h1>
+  <audio controls>
+    <source src="song1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  <audio controls>
+    <source src="song2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
